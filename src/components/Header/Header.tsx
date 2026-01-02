@@ -21,7 +21,7 @@ useGSAP(() => {
       backdropFilter: 'blur(0px)',
     },
     {
-      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      backgroundColor: '#00000050',
       backdropFilter: 'blur(10px)',
       duration: 0.6,
       ease: 'power1.inOut',

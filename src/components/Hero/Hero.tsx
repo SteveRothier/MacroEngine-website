@@ -1,17 +1,27 @@
+import './Hero.css';
+
 const Hero = () => {
-    return (
-      <section id="hero" style={{ minHeight: "100vh", padding: "120px 40px" }}>
-        <h1>MacroEngin</h1>
+  return (
+    <section id="home" className="hero">
+      <div className="hero-content">
+        <h1>
+          Automatisez vos actions<br />
+          avec <span>MacroEngine</span>
+        </h1>
+
         <p>
-          Automatisez vos actions Windows simplement et efficacement.
+          MacroEngine vous permet de créer et exécuter des macros
+          simplement pour gagner du temps sur Windows.
         </p>
-  
-        <a href="#download">
-          <button>Télécharger pour Windows</button>
-        </a>
-      </section>
-    );
-  };
-  
-  export default Hero;
-  
+
+        <div className="hero-actions">
+          <a href="#download" className="btn-primary">
+            Télécharger pour Windows
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
