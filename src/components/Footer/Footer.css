@@ -1,0 +1,35 @@
+.footer {
+    padding: 40px 20px;
+    background-color: var(--bg-footer);
+    color: var(--text-main);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-links a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-links a:hover {
+    color: var(--accent);
+  }
+  
+  @media (max-width: 600px) {
+    .footer-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
