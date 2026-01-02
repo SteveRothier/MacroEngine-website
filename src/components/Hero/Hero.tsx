@@ -1,12 +1,13 @@
+import './Hero.css';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import './Hero.css';
+import { heroContent } from '../../../constants';
 
 const Hero = () => {
 
+  // Animation GSAP
   useGSAP(() => {
     const tl = gsap.timeline();
-
     tl.from('.hero h1', {
       y: 40,
       opacity: 0,
@@ -30,18 +31,10 @@ const Hero = () => {
   return (
     <section id="home" className="hero">
       <div className="hero-content">
-        <h1>
-          Automatisez vos actions<br />
-          avec <span>MacroEngine</span>
-        </h1>
-
-        <p>
-          MacroEngine vous permet de créer et exécuter des macros
-          simplement pour gagner du temps sur Windows.
-        </p>
-
-        <a href="#download" className="btn-primary">
-          Télécharger pour Windows
+        <h1>{heroContent.title}</h1>
+        <p>{heroContent.subtitle}</p>
+        <a href={heroContent.ctaLink} className="btn-primary">
+          {heroContent.ctaText}
         </a>
       </div>
     </section>
